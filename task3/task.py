@@ -16,5 +16,8 @@ def get_entropy(data):
                 entropy -= data[i][j] * log2(data[i][j] / (n - 1)) / (n - 1)
     return entropy
 
-print(get_entropy(get_file_data("task3.csv")))
+def task():
+    res = get_entropy(get_file_data("task3.csv"))
+    print(res)
+    return res
 

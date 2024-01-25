@@ -51,7 +51,7 @@ def make_conversion(marks, trans):
     return positions
 
 
-def main():
+def task():
     filenames = ['ranj_a.json', 'ranj_b.json', 'ranj_c.json']
     marks = [open_json(filename) for filename in filenames]
     trans, reverse_trans = make_trans_dict(marks[0])
@@ -60,5 +60,5 @@ def main():
     print(value)
 
 
-main()
+task()
 

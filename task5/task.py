@@ -1,7 +1,7 @@
 import json
 
 
-def main():
+def task():
     with open("a.json") as f:
         data1 = json.load(f)
     range_table1, new_data1 = data_to_range_table(data1)
@@ -67,5 +67,5 @@ def agreed_cluster_range(A, B):
     return ans
 
 
-main()
+task()
 

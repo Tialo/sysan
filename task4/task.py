@@ -1,7 +1,7 @@
 from itertools import product
 from math import log2 as log
 
-def main():
+def task():
     Hab = Ha = Hb = Ha_b = 0
     probs = [[0] * 37 for _ in range(13)]
     for i, j in product(range(1, 7), range(1, 7)):
@@ -26,5 +26,5 @@ def main():
     print(f"H(B) = {Hb}")
     print(f"I(A,B) = {Hb - Ha_b}") 
 
-main()
+task()
 
